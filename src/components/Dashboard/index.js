@@ -26,8 +26,7 @@ const Dashboard = () => {
         data
       })
     )
-    // after that - put data in store (dispatch data to reducer)
-  })
+  }, [])
 
   return (
     <UserContext.Provider value={user}>
