@@ -5,5 +5,3 @@ function App () {
 }
 
 export default App
-
-//https://dummyjson.com/comments
