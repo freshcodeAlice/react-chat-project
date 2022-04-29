@@ -1,0 +1,24 @@
+.container {
+  background-color: rgb(210, 200, 220);
+}
+
+.form-wrapper {
+  display: flex;
+  padding: 15px;
+}
+
+.form-wrapper .input {
+  flex-grow: 1;
+  height: 15vh;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-wrapper .submit-button {
+  height: 40px;
+  width: 40;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}

@@ -1,5 +1,9 @@
+import DashBoardPage from './pages/DashBoardPage'
+
 function App () {
-  return <div className='App'></div>
+  return <DashBoardPage />
 }
 
 export default App
+
+//https://dummyjson.com/comments
