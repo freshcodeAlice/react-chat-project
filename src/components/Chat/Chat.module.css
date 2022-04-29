@@ -5,10 +5,13 @@
 }
 
 .message-wrapper {
-  width: 400px;
   display: flex;
   flex-direction: row;
   margin: 15px 0;
+}
+
+.current-author-message {
+  flex-direction: row-reverse;
 }
 
 .message-author-image {

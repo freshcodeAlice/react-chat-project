@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from './MessageArea.module.css'
+import cx from 'classnames'
 
 const MessageArea = props => {
   const [inputMessage, setInputMessage] = useState('')
