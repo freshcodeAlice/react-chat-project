@@ -15,6 +15,9 @@ const MessageArea = props => {
     setInputMessage('')
   }
 
+  // Add 'enter' posibility
+  // validate user message
+
   return (
     <div className={styles.container}>
       <form className={styles['form-wrapper']} onSubmit={handleSubmit}>
