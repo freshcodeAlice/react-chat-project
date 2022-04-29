@@ -11,13 +11,11 @@ const Dashboard = () => {
   const [user, setUser] = useState({
     id: 1,
     username: 'User',
-    imageSrc: '/userAvatar.png'
+    imageSrc: '/userphoto.jpg'
   })
   const [state, dispatch] = useReducer(reducer, {
     messages: []
   })
-
-  //useReducer
 
   useEffect(() => {
     getData().then(data =>
@@ -28,13 +26,24 @@ const Dashboard = () => {
     )
   }, [])
 
+  const addNewMessage = text => {
+    const newMessage = {
+      body: text,
+      user
+    }
+    dispatch({
+      type: 'ADD_NEW_MESSAGE',
+      data: newMessage
+    })
+  }
+
   return (
     <UserContext.Provider value={user}>
       <main className={styles.container}>
         <DialogList />
         <div className={styles['chat-wrapper']}>
-          <Chat />
-          <MessageArea />
+          <Chat dialog={state.messages} />
+          <MessageArea submitMessage={addNewMessage} />
         </div>
       </main>
     </UserContext.Provider>

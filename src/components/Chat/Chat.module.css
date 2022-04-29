@@ -1,4 +1,39 @@
 .container {
   background-color: rgba(144, 238, 144, 0.588);
   flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.message-wrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+}
+
+.message-author-image {
+  width: 40px;
+  height: 40px;
+  background-color: pink;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 10px;
+}
+
+.text-wrapper {
+  background-color: bisque;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-size: 0.8em;
+  color: grey;
+}
+
+.message-body {
+  font-size: 1em;
+  color: black;
 }
